@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-Regular.ttf">
+            <string>TitilliumWeb-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GenereCollectionCell" id="gTV-IL-0wX" customClass="GenereCollectionCell" customModule="Test_Shashank_Pali" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rSn-kY-rIF">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="147"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oeT-Xa-YnS">
+                        <rect key="frame" x="110" y="179" width="85" height="21"/>
+                        <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="18"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wXu-Dw-YsP">
+                        <rect key="frame" x="167" y="151" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="wXu-Dw-YsP" secondAttribute="height" multiplier="1:1" id="OhB-sD-ful"/>
+                            <constraint firstAttribute="height" constant="28" id="v0a-AL-GPh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uJ3-dN-Fn9">
+                        <rect key="frame" x="0.0" y="151" width="102" height="21"/>
+                        <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="18"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="R3y-dn-vdJ">
+                        <rect key="frame" x="87.5" y="63.5" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="oeT-Xa-YnS" firstAttribute="leading" secondItem="uJ3-dN-Fn9" secondAttribute="trailing" constant="8" id="82e-XF-Nmv"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uJ3-dN-Fn9" secondAttribute="bottom" id="95B-63-XXq"/>
+                <constraint firstItem="rSn-kY-rIF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9UM-6N-3m3"/>
+                <constraint firstItem="oeT-Xa-YnS" firstAttribute="width" secondItem="uJ3-dN-Fn9" secondAttribute="width" multiplier="0.833333" id="Ehk-OO-UHU"/>
+                <constraint firstItem="uJ3-dN-Fn9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gwt-eK-KDr"/>
+                <constraint firstItem="wXu-Dw-YsP" firstAttribute="top" secondItem="rSn-kY-rIF" secondAttribute="bottom" constant="4" id="Tf8-42-2cg"/>
+                <constraint firstAttribute="trailing" secondItem="oeT-Xa-YnS" secondAttribute="trailing" id="UJs-s0-nXD"/>
+                <constraint firstItem="R3y-dn-vdJ" firstAttribute="centerX" secondItem="rSn-kY-rIF" secondAttribute="centerX" id="fVu-9w-URS"/>
+                <constraint firstItem="R3y-dn-vdJ" firstAttribute="centerY" secondItem="rSn-kY-rIF" secondAttribute="centerY" id="fpS-NN-YkE"/>
+                <constraint firstItem="uJ3-dN-Fn9" firstAttribute="top" secondItem="rSn-kY-rIF" secondAttribute="bottom" constant="4" id="hm8-g4-SUv"/>
+                <constraint firstItem="oeT-Xa-YnS" firstAttribute="top" secondItem="wXu-Dw-YsP" secondAttribute="bottom" id="kV7-0t-FcL"/>
+                <constraint firstAttribute="bottom" secondItem="oeT-Xa-YnS" secondAttribute="bottom" id="s97-4f-RCj"/>
+                <constraint firstAttribute="trailing" secondItem="wXu-Dw-YsP" secondAttribute="trailing" id="vlu-Uv-vg4"/>
+                <constraint firstItem="rSn-kY-rIF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="w38-5u-uSG"/>
+                <constraint firstAttribute="trailing" secondItem="rSn-kY-rIF" secondAttribute="trailing" id="x3r-yk-RXN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="194.5" height="200"/>
+            <connections>
+                <outlet property="fileSizeLabel" destination="oeT-Xa-YnS" id="WOv-lu-3Mc"/>
+                <outlet property="indicator" destination="R3y-dn-vdJ" id="jB9-Nw-3oy"/>
+                <outlet property="itemImgView" destination="rSn-kY-rIF" id="KWL-Cv-UNF"/>
+                <outlet property="itemLabel" destination="uJ3-dN-Fn9" id="V92-A7-4fj"/>
+                <outlet property="statusImgView" destination="wXu-Dw-YsP" id="2OU-mw-fyB"/>
+            </connections>
+            <point key="canvasLocation" x="206.52173913043481" y="201.5625"/>
+        </collectionViewCell>
+    </objects>
+</document>

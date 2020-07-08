@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0PZ-hS-GxJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-SemiBold.ttf">
+            <string>TitilliumWeb-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Introduction Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="IntroductionController" customModule="Test_Shashank_Pali" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELD Mandate Workshop " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6x-4N-Gu1">
+                                <rect key="frame" x="20" y="136" width="357.5" height="37.5"/>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uua-gP-Ipt">
+                                <rect key="frame" x="20" y="794" width="374" height="48"/>
+                                <color key="backgroundColor" red="0.047058823529411764" green="0.39215686274509803" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="M8f-cu-5zg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="REVIEW PROJECT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="iCP-4z-bDQ" kind="show" id="C25-pm-O2D"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L85-8w-MmL">
+                                <rect key="frame" x="20" y="229.5" width="374" height="540.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Readme" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBc-iJ-qqW">
+                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="18"/>
+                                        <color key="textColor" white="0.1573380422" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yaf-71-Qfi">
+                                        <rect key="frame" x="0.0" y="29" width="374" height="511.5"/>
+                                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">● This project is written in Swift
+
+● The project is adaptive in both Portrait and Landscape mode
+
+● It works in iPad as well
+
+● If you want there is a copy of this project on GitHub.
+https://github.com/shashankpali/ELDMandate</string>
+                                        <color key="textColor" white="0.15733804220410955" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="yaf-71-Qfi" secondAttribute="bottom" id="5sA-8h-XgD"/>
+                                    <constraint firstItem="jBc-iJ-qqW" firstAttribute="leading" secondItem="L85-8w-MmL" secondAttribute="leading" id="KhQ-A3-Idu"/>
+                                    <constraint firstItem="jBc-iJ-qqW" firstAttribute="top" secondItem="L85-8w-MmL" secondAttribute="top" id="LTp-Jb-Sem"/>
+                                    <constraint firstItem="yaf-71-Qfi" firstAttribute="leading" secondItem="jBc-iJ-qqW" secondAttribute="leading" id="YzH-FJ-R2z"/>
+                                    <constraint firstItem="yaf-71-Qfi" firstAttribute="top" secondItem="jBc-iJ-qqW" secondAttribute="bottom" constant="8" id="bfx-4e-qc3"/>
+                                    <constraint firstItem="yaf-71-Qfi" firstAttribute="leading" secondItem="L85-8w-MmL" secondAttribute="leading" id="g9G-zG-giJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="yaf-71-Qfi" secondAttribute="trailing" id="iTr-v9-kRp"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Shashank Pali" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nO-Is-gsQ">
+                                <rect key="frame" x="20" y="177.5" width="187" height="28"/>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uua-gP-Ipt" secondAttribute="bottom" constant="20" id="6HH-Kd-EFN"/>
+                            <constraint firstItem="6nO-Is-gsQ" firstAttribute="leading" secondItem="b6x-4N-Gu1" secondAttribute="leading" id="7G1-N6-vzY"/>
+                            <constraint firstItem="L85-8w-MmL" firstAttribute="top" secondItem="6nO-Is-gsQ" secondAttribute="bottom" constant="24" id="Aqr-ib-UgL"/>
+                            <constraint firstItem="b6x-4N-Gu1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="UFK-qG-cdK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uua-gP-Ipt" secondAttribute="trailing" constant="20" id="Wvv-eK-V1s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L85-8w-MmL" secondAttribute="trailing" constant="20" id="d7t-Wz-ffp"/>
+                            <constraint firstItem="6nO-Is-gsQ" firstAttribute="top" secondItem="b6x-4N-Gu1" secondAttribute="bottom" constant="4" id="eBf-4g-Vig"/>
+                            <constraint firstItem="uua-gP-Ipt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ev1-mb-a7x"/>
+                            <constraint firstItem="L85-8w-MmL" firstAttribute="leading" secondItem="b6x-4N-Gu1" secondAttribute="leading" id="q5j-7j-tzq"/>
+                            <constraint firstItem="b6x-4N-Gu1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rPP-ky-5CK"/>
+                            <constraint firstItem="uua-gP-Ipt" firstAttribute="top" secondItem="L85-8w-MmL" secondAttribute="bottom" constant="24" id="tR3-XE-dwE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="CSf-Rp-PfE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="112.5"/>
+        </scene>
+        <!--Genere Collection View Controller-->
+        <scene sceneID="oJY-KN-xkI">
+            <objects>
+                <collectionViewController id="iCP-4z-bDQ" customClass="GenereCollectionViewController" customModule="Test_Shashank_Pali" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" id="2cr-cb-ORC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="sg8-nC-IhN">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="iCP-4z-bDQ" id="WoE-ek-Tug"/>
+                            <outlet property="delegate" destination="iCP-4z-bDQ" id="sJw-X2-oQz"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="U7R-yC-Ydv">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="calendar" catalog="system" id="Tw6-Nw-qGI"/>
+                            <barButtonItem title="Item" image="magnifyingglass" catalog="system" id="f5F-JV-Edt"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZN-cU-aOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1895.6521739130437" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lNh-C1-4VL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0PZ-hS-GxJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="63T-Bp-URE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.047058823529411764" green="0.39215686274509803" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="24"/>
+                            <color key="textColor" red="0.047058823529411764" green="0.39215686274509803" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.047058823530000002" green="0.3921568627" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Xsn-0j-okv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNF-1X-Do0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="64" height="52"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
